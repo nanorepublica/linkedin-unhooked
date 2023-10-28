@@ -1,14 +1,18 @@
 {
-  "name": "Youtube UnHooked",
-  "version": "0.9.8",
-  "description": "Hides parts of Youtube that are unneeded/addictive: recommendations, related videos, comments.",
-   "content_scripts": [
-    {
-      "run_at": "document_start",
-      "matches": ["https://www.youtube.com/*"],
-      "css": ["styles.css"],
-      "all_frames": true
-    }
-  ],
-  "manifest_version": 3
+    "name": "Linkedin UnHooked",
+    "version": "0.9.8",
+    "description": "Hides parts of Linkedin that are unneeded/addictive: feed, news, ads.",
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": [
+                "https://www.linkedin.com/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "all_frames": true
+        }
+    ],
+    "manifest_version": 3
 }

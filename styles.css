@@ -1,54 +1,12 @@
-/** Youtube CSS overrides **/
-
-/** FRONT PAGE FEED **/
-
-/** Displayed while loading, grey boxes **/
-#home-page-skeleton {
-  display: none !important;
+.scaffold-layout__main>div:nth-child(2),
+.scaffold-layout__main>div:nth-child(3) {
+    display: none;
 }
 
-/**
- Must use visibility instead of display as otherwise
- it thinks that the user has scrolled and tries to load
- additional feed items repeatedly.
- **/
-ytd-browse[role="main"][page-subtype="home"] #contents {
-  visibility: hidden !important;
+.scaffold-layout__aside>div:nth-child(2) {
+    display: none;
 }
 
-/** RELATED VIDEOS (SIDEBAR) **/
-
-/** Displayed while loading, grey boxes **/
-#related-skeleton, .watch-skeleton {
-  display: none !important;
-}
-
-ytd-watch-next-secondary-results-renderer {
-  visibility: hidden !important;
-}
-
-/** COMMENTS **/
-
-ytd-comments {
-  visibility: hidden !important;
-}
-
-/** Small comment preview box */
-ytd-comments-entry-point-header-renderer {
-  visibility: hidden !important;
-}
-
-/** RELATED VIDEOS (END OF VIDEO SCREEN) **/
-.ytp-videowall-still, .ytp-endscreen-previous, .ytp-endscreen-next {
-  display: none !important;
-}
-
-/** LIVE CHAT **/
-ytd-live-chat-frame {
-  visibility: hidden !important;
-}
-
-/** HOMEPAGE CHIPS **/
-ytd-feed-filter-chip-bar-renderer {
-  visibility: hidden !important;
+.ad-banner-container {
+    display: none;
 }
